@@ -2,27 +2,24 @@
   "store": [
     {
       "id": 1,
-      "channelName_": "Sony Live",
-      "url_": "https://sonylive/",
-      "purchaseLink_": "https://https://sonylive/purchase"
+      "channelName_": "youtube",
+      "url_": "https://youtube.com",
+      "purchaseLink_": "https://youtube.com/purchase",
+      "isYoutube": "true"
     },
     {
       "id": 2,
-      "channelName_": "Hostar",
-      "url_": "https://hotstart/",
-      "purchaseLink_": "https://https://hotstart/purchase"
+      "channelName_": "sonylive",
+      "url_": "https://sonylive.com",
+      "purchaseLink_": "https://sonylive.com/purchase",
+      "isYoutube": "true"
     },
     {
       "id": 3,
-      "channelName_": "zee5  libe",
-      "url_": "https://zee5/",
-      "purchaseLink_": "https://https://zee5/purchase"
-    },
-    {
-      "id": 4,
-      "channelName_": "zoom",
-      "url_": "https://zoom.com/",
-      "purchaseLink_": "https://zoom.com/purchase"
+      "channelName_": "zee5",
+      "url_": "https://zee5.com",
+      "purchaseLink_": "https://zee5.com/purchase",
+      "isYoutube": "true"
     }
   ]
 }

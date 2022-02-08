@@ -15,11 +15,26 @@ let PORT=process.env.PORT || 8081
 app.get("/",(req,res)=>{
      res.render('admin',{data:db})
 })
-app.get("/channels",(req,res)=>{
-    res.json({data1:db})
+app.get("/channels",(requ,response)=>{
+    let objs=requ.body
+    
+    const options = {
+        url: `http://127.0.0.1:3005/store`,
+        json: true,
+        body: objs
+    };    
+    request.get(options, (err, res, body) => {
+        if (err) {
+            return console.log(err);
+        }
+        response.json(body)
+ 
+    });
+   
+   
 })
 
-app.post("/channels/save",(req,res)=>{
+app.post("/channels",(req,res)=>{
     let objs=req.body
     const options = {
         url: `http://127.0.0.1:3005/store/${req.body.id}`,
@@ -48,6 +63,8 @@ app.post("/newchannel",(req,res)=>{
     });
     res.json({data:"add new channel"})
 })
+
+
 
 app.listen(PORT,(err)=>{
    if(err) throw err
