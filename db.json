@@ -2,22 +2,22 @@
   "store": [
     {
       "id": 1,
-      "channelName_": "youtube",
-      "url_": "https://youtube.com",
-      "purchaseLink_": "https://youtube.com/purchase",
+      "channelName_": "hotstar",
+      "videoURL_": "https://hotstar.com",
+      "purchaseLink_": "https://hotstar.com/purchase",
       "isYoutube": "true"
     },
     {
       "id": 2,
-      "channelName_": "sonylive",
-      "url_": "https://sonylive.com",
-      "purchaseLink_": "https://sonylive.com/purchase",
+      "channelName_": "zoom",
+      "videoURL_": "https://zoom.com",
+      "purchaseLink_": "https://zoom.com/purchase",
       "isYoutube": "true"
     },
     {
       "id": 3,
-      "channelName_": "zee5",
-      "url_": "https://zee5.com",
+      "channelName_": "zee5 ",
+      "videoURL_": "https://zee5.com",
       "purchaseLink_": "https://zee5.com/purchase",
       "isYoutube": "true"
     }

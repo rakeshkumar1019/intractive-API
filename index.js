@@ -12,6 +12,8 @@ app.use(cors())
 app.set('view engine','ejs')
 let PORT=process.env.PORT || 8081
 
+let dbserver="https://dbaseserver.herokuapp.com/store"
+
 app.get("/",(req,res)=>{
      res.render('admin',{data:db})
 })
@@ -19,7 +21,7 @@ app.get("/channels",(requ,response)=>{
     let objs=requ.body
     
     const options = {
-        url: `http://127.0.0.1:3005/store`,
+        url:dbserver,
         json: true,
         body: objs
     };    
@@ -37,7 +39,7 @@ app.get("/channels",(requ,response)=>{
 app.post("/channels",(req,res)=>{
     let objs=req.body
     const options = {
-        url: `http://127.0.0.1:3005/store/${req.body.id}`,
+        url: `${dbserver}/${req.body.id}`,
         json: true,
         body: objs
     };    
@@ -52,7 +54,7 @@ app.post("/channels",(req,res)=>{
 app.post("/newchannel",(req,res)=>{
     let objs=req.body
     const options = {
-        url: `http://127.0.0.1:3005/store/`,
+        url: `${dbserver}`,
         json: true,
         body: objs
     };    
