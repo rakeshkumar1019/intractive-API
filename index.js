@@ -14,9 +14,6 @@ let PORT=process.env.PORT || 8081
 
 let dbserver="https://dbaseserver.herokuapp.com/store"
 
-app.get("/",(req,res)=>{
-     res.render('admin',{data:db})
-})
 app.get("/channels",(requ,response)=>{
     let objs=requ.body
     
